@@ -1,0 +1,69 @@
+{
+  "name": "Metatpl",
+  "version": "0.1.0",
+  "author": "S0ER (soersoft@gmail.com)",
+  "description": "Metarhia base app template",
+  "license": "MIT",
+  "keywords": [
+    "metarhia",
+    "starter",
+    "kit",
+    "cloud",
+    "impress",
+    "nodejs",
+    "example",
+    "websocket",
+    "api",
+    "application",
+    "server",
+    "rpc",
+    "soa",
+    "service",
+    "stateful",
+    "rest",
+    "restful",
+    "web",
+    "framework",
+    "router",
+    "routing",
+    "cluster",
+    "cache",
+    "http",
+    "https",
+    "websockets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soerdev/metatpl"
+  },
+  "bugs": {
+    "url": "https://github.com/soerdev/metatpl/issues"
+  },
+  "homepage": "https://github.com/soerdev/metatpl",
+  "main": "server.js",
+  "types": "types/global.d.ts",
+  "scripts": {
+    "test": "npm run lint && npm run types && node test/system.js",
+    "types": "tsc",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "db": "metasql c"
+  },
+  "engines": {
+    "node": "^12.9 || 14 || 16"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.4",
+    "@types/ws": "^8.2.0",
+    "eslint": "^7.31.0",
+    "metatests": "^0.7.2",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "impress": "^2.6.6",
+    "jsonwebtoken": "^8.5.1",
+    "metasql": "^2.0.1"
+  }
+}
